@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Virtual Glasses</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,23 +16,86 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./CSS/style.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./css/index.css" />
   </head>
+
   <body>
-    <div class="container">
-      <h1>The biggest startup event of the year</h1>
-      <a href="https://mailchi.mp/be4ddea295b0/luans"
-        ><button class="btn btn-warning btn">Find out more</button></a
-      >
+    <div class="container vglasses py-3">
+      <div class="justify-content-between">
+        <div class="col-6 vglasses__left">
+          <div class="">
+            <div class="col-12">
+              <h1 class="mb-2">Virtual Glasses</h1>
+            </div>
+          </div>
+          <div class="row" id="vglassesList">
+            <button id="1" onclick="thaykinh(1)">
+              <img src="./img/g1.jpg" />
+            </button>
+            <button id="2" onclick="thaykinh(2)">
+              <img src="./img/g2.jpg" />
+            </button>
+            <button id="3" onclick="thaykinh(3)">
+              <img src="./img/g3.jpg" />
+            </button>
+            <button id="4" onclick="thaykinh(4)">
+              <img src="./img/g4.jpg" />
+            </button>
+            <button id="5" onclick="thaykinh(5)">
+              <img src="./img/g5.jpg" />
+            </button>
+            <button id="6" onclick="thaykinh(6)">
+              <img src="./img/g6.jpg" />
+            </button>
+            <button id="7" onclick="thaykinh(7)">
+              <img src="./img/g7.jpg" />
+            </button>
+            <button id="8" onclick="thaykinh(8)">
+              <img src="./img/g8.jpg" />
+            </button>
+            <button id="9" onclick="thaykinh(9)">
+              <img src="./img/g9.jpg" />
+            </button>
+          </div>
+        </div>
+        <div class="col-5 vglasses__right p-0">
+          <div class="vglasses__card">
+            <div class="mb-2 text-right mt-2 mr-2">
+              <button class="btn btn-warning" onclick="removeGlasses(false)">
+                Before
+              </button>
+              <button class="btn btn-warning" onclick="removeGlasses(true)">
+                After
+              </button>
+            </div>
+            <div class="vglasses__model" id="avatar"></div>
+            <div id="glassesInfo" class="vglasses__info">
+              <span id="namee"></span>
+              <span id="brand"></span>
+              <span id="color"></span>
+              <br />
+              <br />
+              <span id="price" class="price"></span>
+              <b> </b>
+              <span style="color: yellowgreen">Stocking</span>
+              <br />
+              <p id="decrip"></p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"
     ></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
@@ -43,5 +106,8 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
   </body>
 </html>
